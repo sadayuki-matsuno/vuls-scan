@@ -607,7 +607,7 @@ func detectIPSs(timeoutSec int) {
 }
 
 // Scan scan
-func Scan(timeoutSec int) (results models.ScanResults, err error) {
+func Scan(scannedAt time.Time, timeoutSec int) (results models.ScanResults, err error) {
 	if len(servers) == 0 {
 		return nil, xerrors.New("No server defined. Check the configuration")
 	}
@@ -622,12 +622,7 @@ func Scan(timeoutSec int) (results models.ScanResults, err error) {
 	}()
 
 	util.Log.Info("Scanning vulnerable OS packages...")
-	scannedAt := time.Now()
-	dir, err := EnsureResultDir(scannedAt)
-	if err != nil {
-		return nil, err
-	}
-	return scanVulns(dir, scannedAt, timeoutSec)
+	return scanVulns(scannedAt, timeoutSec)
 }
 
 // ViaHTTP scans servers by HTTP header and body
@@ -738,7 +733,7 @@ func setupChangelogCache() error {
 	return nil
 }
 
-func scanVulns(jsonDir string, scannedAt time.Time, timeoutSec int) (results models.ScanResults, err error) {
+func scanVulns(scannedAt time.Time, timeoutSec int) (results models.ScanResults, err error) {
 	parallelExec(func(o osTypeInterface) (err error) {
 		if err = o.preCure(); err != nil {
 			return err

@@ -15,15 +15,15 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package main
+package scan
 
 import (
 	"fmt"
 	"strings"
 
-	"github.com/future-architect/vuls/config"
-	"github.com/sadayuki-matsuno/vuls-models"
-	"github.com/future-architect/vuls/util"
+	"github.com/sadayuki-matsuno/vuls-config/config"
+	"github.com/sadayuki-matsuno/vuls-models/models"
+	"github.com/sadayuki-matsuno/vuls-config/util"
 )
 
 func isRunningKernel(pack models.Package, family string, kernel models.Kernel) (isKernel, running bool) {

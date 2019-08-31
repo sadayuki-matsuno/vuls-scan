@@ -1,11 +1,11 @@
-package main
+package scan
 
 import (
 	"reflect"
 	"testing"
 
-	"github.com/future-architect/vuls/config"
-	"github.com/sadayuki-matsuno/vuls-models"
+	"github.com/sadayuki-matsuno/vuls-config/config"
+	"github.com/sadayuki-matsuno/vuls-models/models"
 	"github.com/k0kubun/pp"
 )
 

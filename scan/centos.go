@@ -1,9 +1,9 @@
-package main
+package scan
 
 import (
-	"github.com/future-architect/vuls/config"
-	"github.com/sadayuki-matsuno/vuls-models"
-	"github.com/future-architect/vuls/util"
+	"github.com/sadayuki-matsuno/vuls-config/config"
+	"github.com/sadayuki-matsuno/vuls-models/models"
+	"github.com/sadayuki-matsuno/vuls-config/util"
 )
 
 // inherit OsTypeInterface

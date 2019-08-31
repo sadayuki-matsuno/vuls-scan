@@ -15,7 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package main
+package scan
 
 import (
 	"bufio"
@@ -29,9 +29,9 @@ import (
 	"github.com/aquasecurity/fanal/analyzer"
 	"github.com/aquasecurity/fanal/extractor"
 
-	"github.com/future-architect/vuls/config"
-	"github.com/sadayuki-matsuno/vuls-models"
-	"github.com/future-architect/vuls/util"
+	"github.com/sadayuki-matsuno/vuls-config/config"
+	"github.com/sadayuki-matsuno/vuls-models/models"
+	"github.com/sadayuki-matsuno/vuls-config/util"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/xerrors"
 

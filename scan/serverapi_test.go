@@ -1,11 +1,11 @@
-package main
+package scan
 
 import (
 	"net/http"
 	"testing"
 
-	"github.com/future-architect/vuls/config"
-	"github.com/sadayuki-matsuno/vuls-models"
+	"github.com/sadayuki-matsuno/vuls-config/config"
+	"github.com/sadayuki-matsuno/vuls-models/models"
 )
 
 func TestViaHTTP(t *testing.T) {

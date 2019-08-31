@@ -15,13 +15,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package main
+package scan
 
 import (
 	"reflect"
 	"testing"
 
-	"github.com/future-architect/vuls/config"
+	"github.com/sadayuki-matsuno/vuls-config/config"
 	_ "github.com/aquasecurity/fanal/analyzer/library/bundler"
 	_ "github.com/aquasecurity/fanal/analyzer/library/cargo"
 	_ "github.com/aquasecurity/fanal/analyzer/library/composer" 

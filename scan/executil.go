@@ -15,7 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package main
+package scan
 
 import (
 	"bytes"
@@ -36,8 +36,8 @@ import (
 	"golang.org/x/xerrors"
 
 	"github.com/cenkalti/backoff"
-	conf "github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/util"
+	conf "github.com/sadayuki-matsuno/vuls-config/config"
+	"github.com/sadayuki-matsuno/vuls-config/util"
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/sirupsen/logrus"
 )

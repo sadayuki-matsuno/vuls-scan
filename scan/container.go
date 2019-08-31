@@ -15,7 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-package main
+package scan
 
 import (
 	"context"
@@ -25,9 +25,9 @@ import (
 	"github.com/aquasecurity/fanal/analyzer"
 	"golang.org/x/xerrors"
 
-	"github.com/future-architect/vuls/config"
-	"github.com/sadayuki-matsuno/vuls-models"
-	"github.com/future-architect/vuls/util"
+	"github.com/sadayuki-matsuno/vuls-config/config"
+	"github.com/sadayuki-matsuno/vuls-models/models"
+	"github.com/sadayuki-matsuno/vuls-config/util"
 	fanalos "github.com/aquasecurity/fanal/analyzer/os"
 	godeptypes "github.com/aquasecurity/go-dep-parser/pkg/types"
 

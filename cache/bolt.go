@@ -22,7 +22,7 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
-	"github.com/future-architect/vuls/util"
+	"github.com/sadayuki-matsuno/vuls-config/util"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/xerrors"
 )

@@ -19,7 +19,7 @@ import (
 	"testing"
 
 	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/models"
+	"github.com/sadayuki-matsuno/vuls-models"
 )
 
 func TestIsRunningKernelSUSE(t *testing.T) {

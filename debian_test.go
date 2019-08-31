@@ -24,7 +24,7 @@ import (
 
 	"github.com/future-architect/vuls/cache"
 	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/models"
+	"github.com/sadayuki-matsuno/vuls-models"
 	"github.com/k0kubun/pp"
 	"github.com/sirupsen/logrus"
 )

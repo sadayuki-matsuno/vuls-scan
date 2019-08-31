@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/models"
+	"github.com/sadayuki-matsuno/vuls-models"
 	"github.com/future-architect/vuls/util"
 	"golang.org/x/xerrors"
 )

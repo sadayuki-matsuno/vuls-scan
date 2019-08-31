@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/models"
+	"github.com/sadayuki-matsuno/vuls-models"
 )
 
 func TestViaHTTP(t *testing.T) {

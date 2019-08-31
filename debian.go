@@ -27,7 +27,7 @@ import (
 
 	"github.com/future-architect/vuls/cache"
 	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/models"
+	"github.com/sadayuki-matsuno/vuls-models"
 	"github.com/future-architect/vuls/util"
 	version "github.com/knqyf263/go-deb-version"
 	"golang.org/x/xerrors"
